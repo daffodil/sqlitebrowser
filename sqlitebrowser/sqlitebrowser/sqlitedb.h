@@ -41,7 +41,7 @@ typedef QMap<int, QString> resultMap;
 class DBBrowserField
     {    
     public:
-        DBBrowserField() : name( 0 ) { }
+        DBBrowserField() : name( QString() ) { }
         DBBrowserField( const QString& wname,const QString& wtype )
             : name( wname), type( wtype )
         { }
@@ -55,7 +55,7 @@ class DBBrowserField
 class DBBrowserIndex
     {    
     public:
-        DBBrowserIndex() : name( 0 ) { }
+        DBBrowserIndex() : name( QString() ) { }
        DBBrowserIndex( const QString& wname,const QString& wsql )
             : name( wname), sql( wsql )
         { }
@@ -70,7 +70,7 @@ private:
 class DBBrowserTable
     {    
     public:
-        DBBrowserTable() : name( 0 ) { }
+        DBBrowserTable() : name( QString() ) { }
         DBBrowserTable( const QString& wname,const QString& wsql )
             : name( wname), sql( wsql )
         { }
